@@ -1,12 +1,12 @@
 package org.сhainOfResponsibility.developers;
 
 public class Junior implements ITHandler{
-    private int IQ = 120;
+    private int iq = 120;
 
 
     @Override
     public boolean HandleRequest(String taskName, int requestDifficulty) {
-        if (IQ >= requestDifficulty) {
+        if (iq >= requestDifficulty) {
             System.out.println(taskName + "done by Junior");
             return true;
         } else {
